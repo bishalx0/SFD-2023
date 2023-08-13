@@ -365,8 +365,8 @@ ol {
 	padding-top: 200px;
 	min-height: 700px;
 	position: relative;
-	bottom: 150px;
-	left:250px;
+	bottom: -250px;
+	right: 170px;
 }
 
 .hero-section .hero-text span {
