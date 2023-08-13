@@ -1096,3 +1096,7 @@ ol {
 		margin-left: 5px;
 	}
 }
+
+#websiteInContact:hover, #websiteInContact:focus {
+	color: #6a6b7c;
+}
