@@ -10,13 +10,6 @@
         $("#preloder").delay(200).fadeOut("slow");
     });
 
-    /*------------------
-        Background Set
-    --------------------*/
-    $('.set-bg').each(function () {
-        var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
-    });
 
     /*------------------
 		Navigation
@@ -62,7 +55,8 @@
         type: 'iframe'
     });
 
-      var timerdate = "2023/09/16"; 
+
+    var timerdate = "2023-09-16 11:00:00"; 
 
 	$("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
