@@ -80,6 +80,11 @@ ol {
   Helper CSS
 -----------------------*/
 
+.set-bg{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .section-title {
 	text-align: center;
 	margin-bottom: 52px;
