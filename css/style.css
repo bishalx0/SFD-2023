@@ -529,11 +529,12 @@ ol {
 }
 
 .member-item {
-	width: 20%;
+	width: 24.7%;
 	float: left;
 	height: 420px;
 	position: relative;
 	overflow: hidden;
+	margin: 2px;
 }
 
 .member-item:hover .mi-social {
