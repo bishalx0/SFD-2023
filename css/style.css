@@ -137,8 +137,8 @@ ol {
 .price-item .tr-tag,
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
-	background-image: -o-linear-gradient(330deg, #eeeb25 0%, #7be617 100%), -o-linear-gradient(330deg, #eeeb25 0%, #7be617 100%);
-	background-image: linear-gradient(120deg, #eeeb25 0%, #7be617 100%), linear-gradient(120deg, #eeeb25 0%, #7be617 100%);
+	background-image: -o-linear-gradient(330deg, #008000 0%, #008000 100%), -o-linear-gradient(330deg, #008000 0%, #008000 100%);
+	background-image: linear-gradient(120deg, #008000 0%, #008000 100%), linear-gradient(120deg, #008000 0%, #008000 100%);
 }
 
 /* buttons */
@@ -151,8 +151,8 @@ ol {
 	color: #ffffff;
 	text-align: center;
 	border-radius: 50px;
-	background-image: -o-linear-gradient(left, #eeeb25 0%, #7be617 100%), -o-linear-gradient(left, #eeeb25 0%, #7be617 100%);
-	background-image: linear-gradient(to right, #eeeb25 0%, #7be617 100%), linear-gradient(to right, #eeeb25 0%, #7be617 100%);
+	background-image: -o-linear-gradient(left, #008000 0%, #008000 100%), -o-linear-gradient(left, #008000 0%, #008000 100%);
+	background-image: linear-gradient(to right, #008000 0%, #008000 100%), linear-gradient(to right, #008000 0%, #008000 100%);
 }
 
 .site-btn {
@@ -229,13 +229,50 @@ ol {
 }
 
 /*---------------------
+  Back to top
+-----------------------*/
+.totop{
+      position: fixed;
+      font-size: 3em;
+      bottom:0.5em;
+      right:1em;
+      font-weight: 800;
+      height: 1.1em;
+      width: 1.1em;
+	border: none;
+	/* border-radius: 50%; */
+      background: none;
+      cursor: pointer;
+      margin: 0;
+	transition: height 1s, width 0.5s,color 1s;
+	z-index: 5;
+}
+.totop:hover{
+      /* border: 3px solid green; */
+      color:green;
+      height:1.5em;
+      /* width:1.5em; */
+      transition: border 1s,height 0.5s, width 0.5s,color 1s;
+}
+
+.hidden-top{
+	display: none;
+}
+
+/*---------------------
+  Back to Top
+-----------------------*/
+
+
+/*---------------------
   Header
 -----------------------*/
 
 .header-section {
-	display: -webkit-box;
-	display: -ms-flexbox;
+	/* display: -webkit-box; */
+	/* display: -ms-flexbox; */
 	display: flex;
+	/* position: fixed; */
 }
 
 .header-section.header-normal {
@@ -262,7 +299,7 @@ ol {
 	display: inline-block;
 	list-style: none;
 	margin-right: 40px;
-	position: relative;
+	/* position: relative; */
 }
 
 .nav-menu .mainmenu ul li .dropdown {
@@ -296,7 +333,7 @@ ol {
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:hover {
-	color: #eeeb25;
+	color: #008000;
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:after {
@@ -333,7 +370,7 @@ ol {
 	bottom: 36px;
 	height: 2px;
 	width: 100%;
-	background: #eeeb25;
+	background: #008000;
 	content: "";
 	opacity: 0;
 	-webkit-transition: all 0.3s;
@@ -354,10 +391,10 @@ ol {
 -----------------------*/
 
 .hero-section {
-	background-color: rgb(202, 124, 21);
+	background-color: rgb(167, 122, 62);
 	padding: 10px;
 	min-height: 65vh;
-	background: rgb(202, 124, 21) url("../img/nosk-bg.jpeg") no-repeat;
+	background: rgba(202, 124, 21, 0.282) url("../img/nosk-bg.jpeg") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -382,7 +419,7 @@ ol {
 
 .hero-section .hero-text span {
 	font-size: 22px;
-	color: #eeeb25;
+	color: rgb(255, 0, 0);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -536,7 +573,7 @@ ol {
 .member-item {
 	width: 24.7%;
 	float: left;
-	height: 420px;
+	height: 320px;
 	position: relative;
 	overflow: hidden;
 	margin: 2px;
@@ -606,13 +643,13 @@ ol {
 -----------------------*/
 
 .schedule-section {
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 
 .schedule-tab .nav-tabs {
 	border: none;
 	border-radius: 2px;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 	-webkit-box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
 	box-shadow: 3px 10px 30px rgba(74, 74, 77, 0.15);
 }
@@ -628,7 +665,7 @@ ol {
 }
 
 .schedule-tab .nav-tabs .nav-item .nav-link {
-	padding: 14px 0 13px 0;
+	padding: 4px 0 3px 0;
 	border: none;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
@@ -657,23 +694,27 @@ ol {
 }
 
 .schedule-tab .st-content {
-	border: 1px solid #ebebeb;
+	height: 150px;
+	border: 1px solid #ebebeb;	
 	border-radius: 2px;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	background-color: green;
+	
 }
 
 .schedule-tab .st-content:hover {
 	-webkit-box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
 	box-shadow: 3px 12px 30px rgba(23, 24, 34, 0.05);
 	border: 1px solid transparent;
+	background-color: rgba(0, 128, 0, 0.589);
 }
 
 .schedule-tab .st-content .sc-pic {
 	text-align: center;
-	padding: 30px 0;
+	padding: 10px 0;
 }
 
 .schedule-tab .st-content .sc-pic img {
@@ -688,6 +729,7 @@ ol {
 
 .schedule-tab .st-content .sc-text h4 {
 	color: #171822;
+	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
@@ -696,7 +738,7 @@ ol {
 	list-style: none;
 	display: inline-block;
 	font-size: 16px;
-	color: #6a6b7c;
+	color: #000dfd;
 	margin-right: 25px;
 	position: relative;
 }
@@ -718,13 +760,13 @@ ol {
 }
 
 .schedule-tab .st-content .sc-widget {
-	padding: 58px 0;
+	padding: 8px 0;
 }
 
 .schedule-tab .st-content .sc-widget li {
 	list-style: none;
 	font-size: 16px;
-	color: #6a6b7c;
+	color: #000dff;
 	line-height: 32px;
 	position: relative;
 	padding-left: 22px;
@@ -883,7 +925,7 @@ ol {
 	}
 	.member-item {
 		width: 25%;
-		height: 310px;
+		height: 200px;
 	}
 	.cc-text {
 		padding-top: 65px;
@@ -894,13 +936,13 @@ ol {
 
 	.schedule-tab .st-content .sc-pic {
 		text-align: left;
-		padding: 30px 0 0;
+		padding: 20px 0 0;
 	}
 	.schedule-tab .st-content .sc-text {
 		padding: 30px 0 0;
 	}
 	.schedule-tab .st-content .sc-widget {
-		padding: 30px 0;
+		padding: 0 0;
 	}
 	.schedule-tab .st-content {
 		padding-left: 30px;
@@ -1012,7 +1054,7 @@ ol {
 		border-radius: 0;
 	}
 	.slicknav_nav {
-		background: #222;
+		background: green;
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
@@ -1070,7 +1112,7 @@ ol {
 		width: 33.33%;
 	}
 	.member-item {
-		width: 100%;
+		width: 20%;
 	}
 	
 	.footer-text ul li {
