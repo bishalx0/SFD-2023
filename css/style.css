@@ -399,6 +399,16 @@ ol {
 	background-position: center;
 }
 
+.hero-section::before{
+	content: "";
+	position: absolute;
+	top: 108px;
+	left: 0;
+	height: 65vh;
+	width: 100%;
+	background-color: rgba(53, 54, 59, 0.3);
+}
+
 .hero-section .hero-text {
 	position: relative;
 	top: 30vh;
@@ -1013,6 +1023,16 @@ ol {
 
 @media only screen and (max-width: 767px) {
 
+	.hero-section::before{
+		content: "";
+		position: absolute;
+		top: 100px; /**/
+		left: 0;
+		height: 65vh;
+		width: 100%;
+		background-color: rgba(53, 54, 59, 0.3);
+	}
+
 	.counter-section .cd-timer .cd-item {
 		margin-bottom: 10px;
 	}
@@ -1097,6 +1117,15 @@ ol {
 /* Small Mobile: 320px */
 
 @media only screen and (max-width: 479px) {
+	.hero-section::before{
+		content: "";
+		position: absolute;
+		top: 100px; /**/
+		left: 0;
+		height: 65vh;
+		width: 100%;
+	    background-color: rgba(53, 54, 59, 0.3);
+	}
 	.bh-text h2,
 	.hero-section .hero-text h2 {
 		font-size: 36px;
