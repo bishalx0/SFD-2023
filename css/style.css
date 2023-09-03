@@ -933,7 +933,7 @@ ol {
 		padding-top: 0;
 	}
 	.member-item {
-		width: 25%;
+		width: 24.5%;
 		height: 200px;
 	}
 	.cc-text {
@@ -1015,7 +1015,7 @@ ol {
 		margin-bottom: 20px;
 	}
 	.member-item {
-		width: 33.33%;
+		width: 32%;
 	}
 }
 
@@ -1037,7 +1037,7 @@ ol {
 		margin-bottom: 10px;
 	}
 	.member-item {
-		width: 50%;
+		width: 49%;
 	}
 	
 	.footer-text ul li {
@@ -1166,6 +1166,6 @@ ol {
 	}
 }
 
-#websiteInContact:hover, #websiteInContact:focus {
+.websiteInContact:hover, .websiteInContact:focus {
 	color: #6a6b7c;
 }
