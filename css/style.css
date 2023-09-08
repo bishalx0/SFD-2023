@@ -386,6 +386,7 @@ ol {
 	display: none;
 }
 
+
 /*---------------------
   Hero
 -----------------------*/
@@ -1023,6 +1024,11 @@ ol {
 
 @media only screen and (max-width: 767px) {
 
+	/* .slicknav_nav{
+		z-index: 100;
+		position: absolute;
+	} */
+
 	.hero-section::before{
 		content: "";
 		position: absolute;
@@ -1074,6 +1080,12 @@ ol {
 	}
 	.slicknav_nav {
 		background: green;
+		z-index: 100;
+		position: absolute;
+		text-align: center;
+		top:100px;
+		width: 70%;
+		right: 40px;
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
@@ -1082,6 +1094,7 @@ ol {
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
+		border: 1px solid white;
 	}
 	.slicknav_nav ul {
 		margin: 0;
