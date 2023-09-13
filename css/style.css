@@ -5,6 +5,14 @@ body {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
+#speakers{
+   /* display: flex; */
+  
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-wrap:wrap; */
+  /* padding-left: 150px; */
+}
 
 h1,
 h2,
@@ -592,6 +600,7 @@ ol {
   position: relative;
   overflow: hidden;
   margin: 2px;
+  
   
 }
 
