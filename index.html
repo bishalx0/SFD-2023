@@ -67,17 +67,21 @@
 
     <!-- Hero Section Begin -->
     <section id = "hero" class="hero-section">
-        <div class="container">
-            <div class="row">
-                <div class="hero-text">
-                    <h2>
-                        <i style="color:orange">Celebrate SFD 2023 <br/> with NOSK</i> 
-
-                    </h2>
-                    <a href="https://forms.gle/y3nXAHLAHZnqdwbt9" class="primary-btn">Register Now</a>
+        <img src="./img//nosk-bg.jpeg" alt="" class="bgImage">
+        <div class="overlays">
+            <div class="container">
+                <div class="row">
+                    <div class="hero-text">
+                        <h2>
+                            <i class="target">Celebrate SFD 2023 <br/> with NOSK</i> 
+    
+                        </h2>
+                        <a href="https://forms.gle/y3nXAHLAHZnqdwbt9" class="primary-btn second">Register Now</a>
+                    </div>
                 </div>
             </div>
         </div>
+       
     </section>
     <!-- Hero Section End -->
 
@@ -1146,7 +1150,6 @@
         const scrollContainer = () => {
             return document.documentElement || document.body;
         };
-
         document.addEventListener("scroll", () => {
             if (scrollContainer().scrollTop > showOnPx) {
                 backToTopButton.classList.remove("hidden-top");
@@ -1154,7 +1157,6 @@
                 backToTopButton.classList.add("hidden-top");
             }
         });
-
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
