@@ -7,6 +7,14 @@ body {
 
 
 }
+#speakers {
+  /* display: flex; */
+
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-wrap:wrap; */
+  /* padding-left: 150px; */
+}
 
 h1,
 h2,
@@ -80,9 +88,10 @@ ol {
   Helper CSS
 -----------------------*/
 
+
 .set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .section-title {
@@ -622,17 +631,22 @@ ol {
 -----------------------*/
 
 .team-member-section {
-	overflow: hidden;
+feature/timeline
+  overflow: hidden;
 }
 
 .member-item {
-	width: 24.7%;
-	float: left;
-	height: 320px;
-	position: relative;
+  width: 24.7%;
+  float: left;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  margin: 2px;
+
 	overflow: hidden;
-	margin: 2px;
 }
+
+ 
 
 .member-item:hover .mi-social {
 	top: 0;
