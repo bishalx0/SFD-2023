@@ -7,14 +7,6 @@ body {
 
 
 }
-#speakers {
-  /* display: flex; */
-
-  /* justify-content: center;
-  align-items: center; */
-  /* flex-wrap:wrap; */
-  /* padding-left: 150px; */
-}
 
 h1,
 h2,
@@ -91,7 +83,7 @@ ol {
 
 .set-bg {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .section-title {
@@ -631,8 +623,7 @@ ol {
 -----------------------*/
 
 .team-member-section {
-feature/timeline
-  overflow: hidden;
+   overflow: hidden;
 }
 
 .member-item {
@@ -642,8 +633,6 @@ feature/timeline
   position: relative;
   overflow: hidden;
   margin: 2px;
-
-	overflow: hidden;
 }
 
  
